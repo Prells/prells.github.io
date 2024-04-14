@@ -1,0 +1,92 @@
+body, header, nav, main, footer, h1, div, img, #navbar1{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+main {
+	clear: left;
+	padding: 1%
+}
+body{
+	background-color: #ccc;
+}
+header{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	height: 100px;
+}
+#navbar{
+	padding: 1%;
+	margin-bottom: 1%;
+}
+#navbar1{
+	list-style-type: none;
+	text-align: center;
+}
+.navlist{
+	font-size: 1.5em;
+	font-family: Verdana, Arial, sans-serif;
+	border-top: 1px solid #fff;
+	
+}
+.navlist:first-child{
+	border-top: none;
+}
+.navlink{
+	display: block;
+	color: #fff;
+	padding: 0.25em 1em;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 630px), print{
+	/* Tablet Viewport: Style rule for header */
+	header{
+		position: static;
+		padding-bottom: 2%;
+	}
+	.navlist{
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #fff;
+	}
+	.navlist:last-child{
+		border-right: none;
+	}
+	.navlink{
+		padding: 0.1em 0.75em;
+	}
+	main ul{
+		margin: 0 0 4% 0%;
+	}
+}
+
+/* Desktop view */
+@media screen and (min-width: 769px), print{
+	.navlist{
+		border: none;
+	}
+	.navlink{
+		padding: 0.5em 1em;
+	}
+	.navlink:hover{
+		color: #000;
+		backgroud-color: #fff;
+	}
+}
+
+/* Larger Desktops */
+@media screen and (min-width: 1921px), print{
+	#container{
+		width: 1920px;
+		margin: 0 auto;
+	}
+}
+
+@media print{
+	body{
+		background-color: #fff;
+		color: #000;
+	}
+}

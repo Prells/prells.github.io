@@ -1,0 +1,112 @@
+body, header, nav, main, footer, h1, div, img, ul{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+img{
+	max-width:100%;
+	float: center;
+	border: 1px solid black;
+}
+body{
+	background-color: #ccc;
+}
+
+/* Style rules for mobile viewport */
+header{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	height: 100px;
+}
+nav{
+	padding: 1%;
+	margin-bottom: 1%;
+}
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+nav li{
+	font-size: 1.5em;
+	font-family: Verdana, Arial, sans-serif;
+	border-top: 1px solid #fff;
+}
+nav li:first-child{
+	border-top: none;
+}
+
+nav li a{
+	display: block;
+	color: #fff;
+	padding: 0.25em 1em;
+	text-decoration: none;
+}
+main {
+	
+	padding: 2%
+}
+
+#projects{
+	clear: left;
+}
+.projectbar1{
+	width: 29%;
+	float: left;
+	margin 0 2%;
+	border: 1px solid black;
+	text-align: center;
+	margin: 0 2%;
+}
+a.fill-div{
+	display: block;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 630px){
+	/* Tablet Viewport: Style rule for header */
+	header{
+		position: static;
+		padding-bottom: 2%;
+	}
+	nav li{
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #fff;
+	}
+	nav li:last-child{
+		border-right: none;
+	}
+	nav li a{
+		padding: 0.1em 0.75em;
+	}
+	main ul{
+		margin: 0 0 4% 10%;
+	}
+}
+/* Desktop view */
+@media screen and (min-width: 769px){
+	nav li{
+		border: none;
+	}
+	nav li a{
+		padding: 0.5em 1em;
+	}
+	nav li a:hover{
+		color: #000;
+		backgroud-color: #fff;
+	}
+}
+
+/* Larger Desktops */
+@media screen and (min-width: 1921px{
+	#container{
+		width: 1920px;
+		margin: 0 auto;
+	}
+}
+
+
+
+
+
