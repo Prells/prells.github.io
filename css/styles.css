@@ -63,6 +63,10 @@ a.fill-div{
 	text-decoration: none;
 }
 
+p{
+	text-indent: 12px;
+}
+
 @media screen and (min-width: 630px){
 	/* Tablet Viewport: Style rule for header */
 	header{
