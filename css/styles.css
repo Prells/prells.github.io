@@ -51,12 +51,13 @@ main {
 	clear: left;
 }
 .projectbar1{
+	height: 42pt;
 	width: 29%;
-	float: left;
-	margin 0 2%;
+	float: left;	
 	border: 1px solid black;
 	text-align: center;
 	margin: 0 2%;
+	padding: 2%;
 }
 a.fill-div{
 	display: block;
